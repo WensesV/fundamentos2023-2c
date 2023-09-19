@@ -3,7 +3,7 @@ Fundamentos de informatica 2023 - Ejercicios resueltos
 
 -Aqui estare subiendo los ejercicios resueltos en lo que queda de cursada de fundamentos de informatica 2C 2023 dictado en la Universidad Nacional de San Luis.
 
--Todos estos ejercicios estan hechos por mi (alumno), puede variar en la correccion final que den los profesores de la materia.
+-Todos estos ejercicios estan hechos por mi (alumno), puede variar en la correccion final que den los profesores de la materia. Se recomienda consultar los mismos con ellos para corroborar su valides.
 
 -Se recomienda usarlos como guia, no son una solucion definitiva a los ejercicios propuestos. Siempre consultar a los profesores o auxiliares de la materia en caso de dudas.
 
