@@ -5,9 +5,9 @@ Fundamentos de informatica 2023 - Ejercicios resueltos
 
 -Todos estos ejercicios estan hechos por mi (alumno), puede variar en la correccion final que den los profesores de la materia. Se recomienda consultar los mismos con ellos para corroborar su valides.
 
--Se recomienda usarlos como guia, no son una solucion definitiva a los ejercicios propuestos. Siempre consultar a los profesores o auxiliares de la materia en caso de dudas.
+-Usarlos como guia, no son una solucion definitiva a los ejercicios propuestos. Siempre consultar a los profesores o auxiliares de la materia en caso de dudas.
 
--En la mayoria de los casos los ejercicios son tomados como con datos ingresados por el usuario. No le damos un valor preasignado previo a menos que el ejercicio lo requiera.
+-En la mayoria de los casos los ejercicios son tomados como con datos ingresados por el usuario. No le damos un valor preasignado a menos que el ejercicio lo requiera.
 
 -La mayoria de los ejercicios estan reescritos para poder ser utilizados en Lenguaje C. Son probados directamente en Visual Studio Code. Pero deberian de funcionar perfectamente en codeblocks.
 
