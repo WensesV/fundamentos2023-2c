@@ -91,7 +91,7 @@ int main()
         }
     }
     //Salida por pantalla
-    prinft("La cantidad de personas de sexo femenino en %d es de %d.", i, cont);
+    printf("La cantidad de personas de sexo femenino en %d es de %d.", i, cont);
     getchar();
     return 0;
 }
