@@ -1,4 +1,4 @@
-# fundamentos2023-2c
+# fundamentos-de-la-informatica-2023-2c-unsl
 Fundamentos de la Informatica 2023 - Ejercicios resueltos
 
 -Aqui estare subiendo los ejercicios resueltos en lo que queda de cursada de fundamentos de la Informatica 2C 2023 dictado en la Universidad Nacional de San Luis.
