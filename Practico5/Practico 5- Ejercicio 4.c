@@ -19,8 +19,8 @@ int main()
 #include <stdlib.h>
 
 int main(){ // faltaba el corchete "}"
-    char letra; //debe empezar en minuscula
+    char Letra; 
     printf("Comenzamos a programar en lenguaje C! \n"); // faltaba el parentesis ")"
-    printf ("Mi nombre comienza con la letra: %d", letra);
+    printf ("Mi nombre comienza con la letra: %d", Letra); // agregamos 'L' mayusucla
     return 0;
 }
