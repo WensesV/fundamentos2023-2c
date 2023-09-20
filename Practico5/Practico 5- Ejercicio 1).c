@@ -6,11 +6,11 @@ int main(){
     float vrF;
     int vrE = 15;
     vrF = vrE/C; // realiza la division y la asigna a un numero entero. Una de las dos variables involucradas en la division debe de ser de tipo real para obtener un valor real.
-    vrE = vrE%C; // nos devuelve el modulo // Caso de modulos deben de ser las dos variables de tipo entero
+    vrE = vrE%C; // nos devuelve el modulo // Caso de modulos deben de ser los dos numeros de entrada de tipo entero
     printf("Los valores finales son: \n");
     printf("%f --- %f\n", vrE, vrF);
     printf("El caracter es %c y su valor en la tabla ASCII es %d\n", vrC, vrC);
-    getchar();
+    getchar(); //No es necesario incluir esta linea. Esta agregada para que al compilarlo en Visual Studio Code nos muestre la pantalla final y se cierre con un enter.
     return(0);
 }
 
@@ -42,12 +42,15 @@ El caracter es p y su valor en la tabla ASCII es 112
 
 1.6. Completar la tabla y realizar la ejecucion
 
-|   Sentencias  |   C   |   vrC   |   vrE    |   vrF   |   Pantalla   |
- const int C = 4    4
-
-
-
-
-
-
+|   Sentencias  |   C   |   vrC   |   vrE    |   vrF   |                   Pantalla                      |
+|const int C = 4|   4   |         |          |         |                                                 |
+|char vrC = 'p' |       |    p    |          |         |                                                 |
+|float vrF      |       |         |          |  float  |                                                 |
+|vrE = 15       |       |         |    15    |         |                                                 |
+|vrF = vrE/C    |       |         |          |   3.0   |                                                 | C:AUX ----> 15/4 = 3.75 (Tomaremos solo 3.0 ya que los dos numeros ingresados son numeros enteros, para que sea el numero completo al menos uno de los dos numeros involucrados debe de ser de tipo real)
+|vrE = vrE%C    |       |         |    3     |         |                                                 | C.AUX ----> 15//4 = 3 ("//" calcula el modulo que seria el resto de una division, los numeros a utilizar deben de ser de tipo entero)
+|printf         |       |         |          |         |Los valores finales son:                         |
+|printf         |       |         |          |         |3 --- 3.0                                        |
+|printf         |       |         |          |         |El caracter es p y su valor en la tabla ASCII es |
+|               |       |         |          |         |                                                 |
 */
