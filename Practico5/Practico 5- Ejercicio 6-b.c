@@ -67,7 +67,7 @@ int main()
     }
     printf("Fin del ciclo WHILE\n");
     VE=0;
-    return 0;
     printf("contenido final de la variable VE: --- %d \n", VE);
     printf("contenido final de la variable ve: --- %d \n", ve);
+    return 0;
 }
