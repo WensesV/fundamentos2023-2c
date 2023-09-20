@@ -11,6 +11,8 @@ Fundamentos de la Informatica 2023 - Ejercicios resueltos
 
 -La mayoria de los ejercicios estan reescritos para poder ser utilizados en Lenguaje C. Son probados directamente en Visual Studio Code. Pero deberian de funcionar perfectamente en CodeBlocks.
 
+-Se subira una guia en paralelo para que puedan supervisar las sintaxis de codigo utilizado,
+
 
 ----- Links utiles -----
 
