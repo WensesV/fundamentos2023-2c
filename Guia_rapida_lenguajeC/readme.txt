@@ -1,0 +1,1 @@
+No ejecutar el manual, el mismo esta escrito en lenguaje C para que a la hora de ver las sintaxis, tu IDE reconozca las funciones, variables, etc y puedas identificarlos mas rapido por sus colores.
