@@ -1,4 +1,5 @@
 
+
 # Manual de Lenguaje C
 
 Guia de sintaxis para programar en lenguaje C
@@ -29,10 +30,10 @@ Ejemplo:
 ```
 
 ## Tipos de variables
-- Enteros(int)
-- Flotante(float): Se utilizan para almacenar números con decimales (Números con coma)
-- Caracteres(char): se utilizan para almacenar caracteres individuales, como letras, números o símbolos.
-- Booleanos(bool): Valores booleanos (Verdadero o falso/True – False)
+- Enteros __(int)__
+- Flotante __(float)__: Se utilizan para almacenar números con decimales (Números con coma)
+- Caracteres __(char)__: se utilizan para almacenar caracteres individuales, como letras, números o símbolos.
+- Booleanos __(bool)__: Valores booleanos (Verdadero o falso/True – False)
 
 ## Asignar un valor a una variable
 Para asinar una variable a una variable simplemente debemos nombrar a la variable, escribir un signo "=" y segidamente le valor a inggresar en la variable
@@ -112,35 +113,70 @@ Muestra en pantalla
 
     Número entero: 42, Número decimal: 3.14, Carácter: A
 
+## funcion scanf() y getchar() - ingresar datos
+
+- **scanf()**: se utiliza para leer un entero ingresado por el usuario y almacenarlo en la variable
+- **getchar()**: se utiliza para consumir o generar un salto de línea (o cualquier otro carácter) que queda en el búfer de entrada después de la lectura de scanf. Esto asegura que la entrada esté lista para futuras operaciones de lectura sin problemas.
+
+Sintaxis para ingresar datos
+
+    scanf("formato", &variable);
+    getchar(); 
+
+Ejemplo
+
+    #include <stdio.h>
+
+    int main() {
+        int numero;
+        char caracter;
+
+        printf("Ingresa un número entero: ");
+        scanf("%d", &numero);                   //Lee lo ingresado y almacena en la variable numero
+        getchar(); // Limpia el búfer de entrada (consume el carácter de salto de línea)
+
+        printf("Ingresa un carácter: ");
+        scanf("%d", &caracter)
+        getchar();
+
+        printf("Número entero: %d\n", numero);
+        printf("Carácter: %c\n", caracter);
+
+        return 0;
+    }
+
+
+
+
 ## Operaciones Matematicas/Algebraicas
 
-- Suma (+): Se utiliza para sumar dos valores.
+- **Suma (+)**: Se utiliza para sumar dos valores.
 
       int resultado = 5 + 3; // resultado contendrá 8
 
-- Resta (-): Se utiliza para restar un valor de otro.
+- **Resta (-)**: Se utiliza para restar un valor de otro.
 
       int resultado = 10 - 4; // resultado contendrá 6
 
-- Multiplicación (*): Se utiliza para multiplicar dos valores.
+- **Multiplicación (*)**: Se utiliza para multiplicar dos valores.
 
       int resultado = 6 * 7; // resultado contendrá 42
 
-- División (/): Se utiliza para dividir un valor por otro. Si los valores son enteros, la división será entera (el resultado si es bolueano tendrá un cero después de una coma).
+- **División (/)**: Se utiliza para dividir un valor por otro. Si los valores son enteros, la división será entera (el resultado si es bolueano tendrá un cero después de una coma).
 
       int resultado = 10 / 3; // resultado contendrá 3 (división entera)
 
-- Módulo (%): Devuelve el residuo o resto de una división entera.(Deben ser si o si enteros)
+- **Módulo (%)**: Devuelve el residuo o resto de una división entera.(Deben ser si o si enteros)
 
       int resultado = 10 % 3; // resultado contendrá 1 (residuo de 10 / 3)
 
-- Operadores de incremento (++) y decremento (--): Se utilizan para aumentar o disminuir el valor de una variable en 1.
+- **Operadores de incremento (++) y decremento (--)**: Se utilizan para aumentar o disminuir el valor de una variable en 1.
 
       int contador = 5;
       contador++; // Incrementa el valor de contador a 6
       contador--; // Decrementa el valor de contador a 5 nuevamente
 
-- Parentesis (): Se pueden utilizar en combinación para realizar operaciones más complejas. También puedes usar paréntesis para controlar el orden de evaluación de las operaciones, al igual que en álgebra.
+- **Parentesis ()**: Se pueden utilizar en combinación para realizar operaciones más complejas. También puedes usar paréntesis para controlar el orden de evaluación de las operaciones, al igual que en álgebra.
 
       int resultado = (4 + 2) * 3; // resultado contendrá 18 (4 + 2) se evalúa primero, luego se multiplica por 3
 
@@ -148,7 +184,7 @@ Muestra en pantalla
 Una expresión lógica es una combinación de operadores lógicos y operandos que produce un valor booleano (verdadero o falso) como resultado. Estas expresiones 
 se utilizan en estructuras de control condicionales. como if, while, for, entre otras, para tomar decisiones basadas en condiciones.
 
-- Operadores Relacionales: Los operadores relacionales se utilizan para comparar dos valores y producir un resultado booleano (true/false).
+- **Operadores Relacionales**: Los operadores relacionales se utilizan para comparar dos valores y producir un resultado booleano (true/false).
 
         == (igual a): Comprueba si dos valores son iguales.
         != (diferente de): Comprueba si dos valores son diferentes.
@@ -157,7 +193,7 @@ se utilizan en estructuras de control condicionales. como if, while, for, entre 
         <= (menor o igual que): Comprueba si el valor de la izquierda es menor o igual al valor de la derecha.
         >= (mayor o igual que): Comprueba si el valor de la izquierda es mayor o igual al valor de la derecha.
 
-- Operadores Lógicos: Se utilizan para combinar o modificar expresiones lógicas
+- **Operadores Lógicos**: Se utilizan para combinar o modificar expresiones lógicas
 
           && (y lógico): Devuelve verdadero si ambas expresiones son verdaderas.
           || (o lógico): Devuelve verdadero si al menos una de las expresiones es verdadera.
@@ -169,13 +205,13 @@ se utilizan en estructuras de control condicionales. como if, while, for, entre 
 Se utilizan para tomar decisiones en un programa. Te permiten ejecutar ciertas partes de código si una condición dada es verdadera (true) y 
 ejecutar otras partes de código si la condición es falsa (false).
 
-Sintaxis IF
+Sintaxis IF:
 
     If(expresion_logica){
         // Codigo a ejecutar;
     }
 
-Sintaxis IF/ELSE
+Sintaxis IF/ELSE:
 
     If(expresion_logica){ 		//Si se cumple
     	// Codigo a ejecutar	//realizo esto
@@ -197,7 +233,7 @@ Ejemplo 1
 
 Se utiliza para repetir un bloque de código mientras una expresión lógica dada sea verdadera (true).
 
-Sintaxis WHILE
+Sintaxis WHILE:
 
     while (expresion_logica) {
         // Código a repetir mientras la expresión lógica sea    verdadera
@@ -223,11 +259,11 @@ y seguir la ejecicion de las mismas hasta que deje de complirse cierta condicion
 
 La repeticion for consta de 3 partes fundamentales
 
-- Inicialización: Aquí se establece una variable de control y se le asigna un valor inicial. Esta parte se ejecuta solo una vez al principio. Normalmente se empieza a contar desde el 0.
+- **Inicialización**: Aquí se establece una variable de control y se le asigna un valor inicial. Esta parte se ejecuta solo una vez al principio. Normalmente se empieza a contar desde el 0.
 
-- Condición: Es una expresión lógica que se evalúa antes de cada iteración del bucle. Si la condición es verdadera, el bucle continúa ejecutándose; si es falsa, el bucle se detiene. Generalmente si sabemos cuantas veces vamos a repetir, se utiliza x < nro_de_repeticiones.
+- **Condición**: Es una expresión lógica que se evalúa antes de cada iteración del bucle. Si la condición es verdadera, el bucle continúa ejecutándose; si es falsa, el bucle se detiene. Generalmente si sabemos cuantas veces vamos a repetir, se utiliza x < nro_de_repeticiones.
 
-- Incremento o decremento: Esto es lo que se hace al final de cada ejecucion del bucle para actualizar la variable de control. Generalmente, se utiliza para aumentar (i++) o disminuir(i--) el valor de la variable de control. 
+- **Incremento o decremento**: Esto es lo que se hace al final de cada ejecucion del bucle para actualizar la variable de control. Generalmente, se utiliza para aumentar (i++) o disminuir(i--) el valor de la variable de control. 
 
 Sintaxis FOR
 
