@@ -1,4 +1,4 @@
-
+//3 a) Relizar tabla de ejecucion del siguiente codigo
 
 int main(){
     int ve; char ca; float fl; //linea 5
@@ -11,7 +11,7 @@ int main(){
     return 0;
 }
 
-/* Realizar tabla de ejecucion
+/* Tabla de ejecucion
 |       Sentencias       |   ve  |   ca   |   fl    |                   Pantalla                      |
 |     linea 5            | (int) | (char) | (float) |                                                 |
 |ve = 15%7               |   1   |        |         |                                                 | 

@@ -39,23 +39,21 @@ Fin-Del-Repetir
 
 int main()
 {
-    int x, i;
+    int num, i;
     for ( i = 0; i < 3; i++)
     {
         printf("Ingrese un numero\n");
-        scanf("%d",&x);
+        scanf("%d",&num);
         getchar();
-        if (x>10){
+        if (num > 10){
             printf("El numero ingresado es mayor que 10\n");
         }
-        if (x=10){
+        if (num == 10){
             printf("El numero ingresado es igual a 10\n");
         }
-        else{
+        if(num < 10){
             printf("El numero ingresado es menor que 10\n");
         }
     }
-
-    
     return 0;
 }

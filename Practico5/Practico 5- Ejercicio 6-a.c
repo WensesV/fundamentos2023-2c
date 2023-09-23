@@ -45,7 +45,7 @@ int main(){
     // a) Codificarlos en lenguaje C, mostrando por pantalla el contenido de todas las variables.
     printf("contenido de la variable ve: --- %d \n", ve);
     printf("contenido de la variable ca: --- %c \n", ca);
-    printf("contenido de la variable fl: --- %d \n", fl);
+    printf("contenido de la variable fl: --- %f \n", fl);
     getchar(); //No es necesario incluir esta linea. Esta agregada para que al compilarlo en Visual Studio Code nos muestre la pantalla final y se cierre con un enter.
     return 0;
 }

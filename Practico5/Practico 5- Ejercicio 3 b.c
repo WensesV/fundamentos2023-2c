@@ -1,3 +1,6 @@
+// 3 b) Relizar tabla de ejecucion del siguiente codigo
+
+
 int main()
 {
     int VE, ve;
@@ -11,7 +14,7 @@ int main()
 }
 
 
-//Realizar tabla de ejecucion
+//Tabla de ejecucion
 /*
 |   Sentencias  |   VE   |   ve   |    Pantalla     |
 | int VE, ve    |  int   |  int   |                 |

@@ -4,23 +4,27 @@
 
 
 
-/*#inclu <stdio.h>
+/*#inclu <stdio.h> // falta escribir "de"
 #include <stdlib.h>
-int main()
+#include <stdlib.h>
+int main()  // faltaba el corchete "}"
  char Letra;
- printf("Comenzamos a programar en lenguaje C! \n";
- printf (“Mi nombre comienza con la letra: %d”, letra);
+ // Añadimos un ingreso del nombre o letra segun la preferencia para "Letra"
+ printf("Comenzamos a programar en lenguaje C! \n";     // faltaba el parentesis ")"
+ printf (“Mi nombre comienza con la letra: %d”, letra);     // agregamos 'L' mayusucla - cambiamos %d por %c
  return 0;
 }*/
 
 // Version corregida
 
-#include <stdio.h> // falta escribir "de"
-#include <stdlib.h>
+#include <stdio.h> 
 
-int main(){ // faltaba el corchete "}"
-    char Letra; 
-    printf("Comenzamos a programar en lenguaje C! \n"); // faltaba el parentesis ")"
-    printf ("Mi nombre comienza con la letra: %d", Letra); // agregamos 'L' mayusucla
+int main(){
+        char Letra;
+    printf("Comenzamos a programar en lenguaje C! \n");
+    printf("Escriba su nombre: ");
+    scanf("%c",&Letra);
+    getchar();
+    printf ("Mi nombre comienza con la letra: %c", Letra); 
     return 0;
 }
