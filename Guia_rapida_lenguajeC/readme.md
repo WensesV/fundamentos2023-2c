@@ -1,5 +1,5 @@
 
-# Manuel de Lenguaje C
+# Manual de Lenguaje C
 
 Guia de sintaxis para programar en lenguaje C
 
@@ -215,9 +215,9 @@ Ejemplo 1
         return 0;
     }
 
-## Repeticion FOR
+## Repetición FOR
 
-Es una estructura de control que se utiliza para repetir un bloque de código un número específico de veces. El bucle ‘for’ es 
+Es una estructura de control que se utiliza para repetir un bloque de código, un número específico de veces. El bucle de repetición ‘for’ es 
 especialmente útil cuando se conoce la cantidad exacta de veces que deseas que se ejecute un bloque de código. la misma lleva una variable que nos sirve de guia para contar las repeticiones
 y seguir la ejecicion de las mismas hasta que deje de complirse cierta condicion.
 
