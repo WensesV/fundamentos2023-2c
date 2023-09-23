@@ -8,8 +8,10 @@ Guia de sintaxis para programar en lenguaje C
 - Una variable es un espacio de memoria con un nombre asociado que se utiliza para almacenar y manipular datos en un programa C.
 - Las variables pueden cambiar de valor durante la ejecución del programa.
 - Debes declarar una variable antes de usarla, especificando su tipo de datos (como int, float, char, etc.) y un nombre.
-- Puedes asignar valores a las variables en cualquier momento y modificar su contenido durante la ejecución del programa. 
-(Para ello, se suele escribir el nombre_de_la_variable = x_valor, ejemplo: )
+- Puedes asignar valores a las variables en cualquier momento y modificar su contenido durante la ejecución del programa.
+- Para definir una variable, primero anunciamos el tipo de variable, seguido del nombre de la misma.
+
+Ejemplo:
 
 ```bash
   int num1 = 14;
