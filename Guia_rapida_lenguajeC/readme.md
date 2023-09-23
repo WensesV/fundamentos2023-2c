@@ -4,6 +4,19 @@
 
 Guia de sintaxis para programar en lenguaje C
 
+## Librerias
+En lenguaje C, las librerías (también conocidas como bibliotecas) son conjuntos de funciones predefinidas que proporcionan una amplia variedad de capacidades y características para facilitar el desarrollo de programas. Estas librerías están disponibles para los programadores para que las utilicen en sus programas C.
+En este curso utilizamos las librerias **stdio.h** (para la entrada de datos) y **stdlib.h** (proporciona una variedad de funciones y tipos de datos esenciales para la programación). Las mismas deben ser descritas al comienzo del programa
+
+sintaxis
+
+    #include <nombre_de_la_libreria>
+
+Ejemplo
+
+    #include <stdio.h>
+    #include <stdlib.h>
+
 ## Variables en C
 
 - Una variable es un espacio de memoria con un nombre asociado que se utiliza para almacenar y manipular datos en un programa C.
