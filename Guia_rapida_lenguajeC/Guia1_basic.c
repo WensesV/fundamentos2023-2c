@@ -20,12 +20,18 @@ Variables en C
 -Caracteres(char): se utilizan para almacenar caracteres individuales, como letras, números o símbolos.
 -Booleanos(bool): Valores booleanos (Verdadero o falso/True – False)*/
 
+// --- Asignar un valor a una variable ---
+/* para asinar una variable a una variable simplemente debemos nombrar a la variable, escribir un signo "=" y segidamente le valor a inggresar en la variable
+como se puede apreciar en los siguientes ejemplos de variables*/
+
 /*--<Ejemplos de variables>--*/
 
 int edad = 30;
 float altura = 1.75;
 char letra = 'W';
 bool esVerdadero = true;
+
+
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -112,11 +118,11 @@ Número entero: 42, Número decimal: 3.14, Carácter: A
 
     int resultado = 6 * 7; // resultado contendrá 42
 
-//División (/): Se utiliza para dividir un valor por otro. Si los valores son enteros, la división será entera (el resultado si es bolueano tendrá un cero después de la coma).
+//División (/): Se utiliza para dividir un valor por otro. Si los valores son enteros, la división será entera (el resultado si es bolueano tendrá un cero después de una coma).
 
     int resultado = 10 / 3; // resultado contendrá 3 (división entera)
 
-//Módulo (%): Devuelve el residuo de una división entera.(Deben ser si o si enteros)
+//Módulo (%): Devuelve el residuo o resto de una división entera.(Deben ser si o si enteros)
 
     int resultado = 10 % 3; // resultado contendrá 1 (residuo de 10 / 3)
 
@@ -137,7 +143,7 @@ Número entero: 42, Número decimal: 3.14, Carácter: A
 /*Una expresión lógica es una combinación de operadores lógicos y operandos que produce un valor booleano (verdadero o falso) como resultado. Estas expresiones 
 se utilizan en estructuras de control condicionales. como if, while, for, entre otras, para tomar decisiones basadas en condiciones.*/
 
-    //-Operadores Relacionales: Los operadores relacionales se utilizan para comparar dos valores y producir un resultado booleano.
+    //-Operadores Relacionales: Los operadores relacionales se utilizan para comparar dos valores y producir un resultado booleano (true/false).
         == (igual a): Comprueba si dos valores son iguales.
         != (diferente de): Comprueba si dos valores son diferentes.
         < (menor que): Comprueba si el valor de la izquierda es menor que el valor de la derecha.
@@ -157,13 +163,20 @@ se utilizan en estructuras de control condicionales. como if, while, for, entre 
 Se utilizan para tomar decisiones en un programa. Te permiten ejecutar ciertas partes de código si una condición dada es verdadera (true) y 
 ejecutar otras partes de código si la condición es falsa (false).
 
+
 /*----- Sintaxis(if) -----*/
+
+
 
 If(expresion_logica){
     // Codigo a ejecutar;
 }
 
+
+
 /*----- Sintaxis(if/else) -----*/
+
+
 
 If(expresion_logica){ 		//Si se cumple
 	// Codigo a ejecutar	//realizo esto
@@ -172,7 +185,11 @@ Else{		//Si no se cumple
 	//Codigo a ejecutar	//realizo esto otro
 }
 
+
+
 /*-----< Ejemplo 1 >-----*/
+
+
 
 int numero = 7;
 if (numero % 2 == 0) {
@@ -180,6 +197,7 @@ if (numero % 2 == 0) {
 } else {
     printf("El número es impar.\n");
 }
+
 
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
@@ -191,11 +209,17 @@ if (numero % 2 == 0) {
 
 /*----- Sintaxis(while) -----*/
 
+
+
 while (expresion_logica) {
     // Código a repetir mientras la expresión lógica sea verdadera
 }
 
+
+
 /*-----< Ejemplo 1 >-----*/
+
+
 
 #include <stdio.h>
 int main() {
@@ -208,21 +232,36 @@ int main() {
 }
 
 
+
+
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
 
-/*-----------< Buble FOR >-----------*/
+/*-----------< Bucle FOR >-----------*/
 
 /*Es una estructura de control que se utiliza para repetir un bloque de código un número específico de veces. El bucle ‘for’ es 
-especialmente útil cuando se conoce la cantidad exacta de veces que deseas que se ejecute un bloque de código.*/
+especialmente útil cuando se conoce la cantidad exacta de veces que deseas que se ejecute un bloque de código. la misma lleva una variable que nos sirve de guia para contar las repeticiones
+y seguir la ejecicion de las mismas hasta que deje de complirse cierta condicion.*/
+
+//La repeticion for consta de 3 partes fundamentales
+
+/*Inicialización: Aquí se establece una variable de control y se le asigna un valor inicial. Esta parte se ejecuta solo una vez al principio. Normalmente se empieza a contar desde el 0.
+Condición: Es una expresión lógica que se evalúa antes de cada iteración del bucle. Si la condición es verdadera, el bucle continúa ejecutándose; si es falsa, el bucle se detiene. Generalmente si sabemos cuantas veces vamos a repetir, se utiliza x < nro_de_repeticiones.
+Incremento o decremento: Esto es lo que se hace al final de cada ejecucion del bucle para actualizar la variable de control. Generalmente, se utiliza para aumentar (i++) o disminuir(i--) el valor de la variable de control. */
 
 /*----- Sintaxis(for) -----*/
+
+
 
 for (inicialización; condición; incremento/decremento) {
     // Código a repetir
 }
 
+
+
 /*-----< Ejemplo 1 >-----*/
+
+
 
 #include <stdio.h>
 int main() {
