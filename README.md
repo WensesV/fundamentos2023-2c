@@ -29,7 +29,7 @@ Ejercicios resueltos + Guia Lenguaje C
 ## Novedades
 - Práctico 5 - Completo
 - Nuevo: Guías para Lenguaje C 
-- Nuevo: Ejecutables de los ejercicios en carpera Output
+- Nuevo: Ejecutables de los ejercicios en carpeta Output
 
 ------------------------
 
