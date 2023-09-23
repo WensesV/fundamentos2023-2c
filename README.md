@@ -25,7 +25,16 @@ Ejercicios resueltos + Guia Lenguaje C
 
 
 ------------------------
-En caso de cualquier error o duda no dudes en contactarte via mail: borisvazquez96@gmail.com
 
+## Novedades
+- Práctico 5 - Completo
+- Nuevo: Guías para Lenguaje C 
+- Nuevo: Ejecutables de los ejercicios en carpera Output
+
+------------------------
+
+En caso de cualquier error o duda no dudes en contactarte
+
+Telegram: https://t.me/wensesv
 @wensesv
 
