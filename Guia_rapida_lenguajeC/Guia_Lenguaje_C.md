@@ -161,6 +161,7 @@ se utilizan en estructuras de control condicionales. como if, while, for, entre 
           || (o lógico): Devuelve verdadero si al menos una de las expresiones es verdadera.
           ! (no lógico): Invierte el valor de una expresión, convirtiendo verdadero en falso y viceversa.
 
+
 ## Condicional IF/IF-ELSE
 
 Se utilizan para tomar decisiones en un programa. Te permiten ejecutar ciertas partes de código si una condición dada es verdadera (true) y 
@@ -221,7 +222,9 @@ y seguir la ejecicion de las mismas hasta que deje de complirse cierta condicion
 La repeticion for consta de 3 partes fundamentales
 
 - Inicialización: Aquí se establece una variable de control y se le asigna un valor inicial. Esta parte se ejecuta solo una vez al principio. Normalmente se empieza a contar desde el 0.
+
 - Condición: Es una expresión lógica que se evalúa antes de cada iteración del bucle. Si la condición es verdadera, el bucle continúa ejecutándose; si es falsa, el bucle se detiene. Generalmente si sabemos cuantas veces vamos a repetir, se utiliza x < nro_de_repeticiones.
+
 - Incremento o decremento: Esto es lo que se hace al final de cada ejecucion del bucle para actualizar la variable de control. Generalmente, se utiliza para aumentar (i++) o disminuir(i--) el valor de la variable de control. 
 
 Sintaxis FOR
