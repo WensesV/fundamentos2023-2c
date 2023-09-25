@@ -57,6 +57,12 @@ Ejemplo:
 ```
 
 
+## Tipos de variables
+- Enteros __(int)__
+- Flotante __(float)__: Se utilizan para almacenar números con decimales (Números con coma)
+- Caracteres __(char)__: se utilizan para almacenar caracteres individuales, como letras, números o símbolos.
+- Booleanos __(bool)__: Valores booleanos (Verdadero o falso/True – False)
+
 ## Asignar un valor a una variable
 Para asignar una variable a una variable simplemente debemos nombrar a la variable, escribir un signo "=" y segidamente le valor a inggresar en la variable
 como se puede apreciar en los siguientes ejemplos de variables.
@@ -79,13 +85,6 @@ Ejemplo:
 ```bash
   const int numero_entero = 3;
 ```
-
-## Tipos de variables
-- Enteros __(int)__
-- Flotante __(float)__: Se utilizan para almacenar números con decimales (Números con coma)
-- Caracteres __(char)__: se utilizan para almacenar caracteres individuales, como letras, números o símbolos.
-- Booleanos __(bool)__: Valores booleanos (Verdadero o falso/True – False)
-
 
 ## Función printf()
 
