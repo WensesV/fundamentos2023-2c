@@ -24,7 +24,7 @@ Ejemplo
 
 Es el algoritmo principal del programa. Todos los programas deben tener una función Main. Es el punto de inicio dónde se ejecutan el programa. La misma al final debe tener un **return 0;**
 
-Sintaxis de un programa 
+### Sintaxis de un programa 
 
 
 
@@ -160,7 +160,7 @@ Muestra en pantalla
 - **scanf()**: se utiliza para leer un entero ingresado por el usuario y almacenarlo en la variable
 - **getchar()**: se utiliza para consumir o generar un salto de línea (o cualquier otro carácter) que queda en el búfer de entrada después de la lectura de scanf. Esto asegura que la entrada esté lista para futuras operaciones de lectura sin problemas.
 
-Sintaxis para ingresar datos
+### Sintaxis para ingresar datos
 
     scanf("formato", &variable);
     getchar(); 
@@ -247,13 +247,13 @@ se utilizan en estructuras de control condicionales. como if, while, for, entre 
 Se utilizan para tomar decisiones en un programa. Te permiten ejecutar ciertas partes de código si una condición dada es verdadera (true) y 
 ejecutar otras partes de código si la condición es falsa (false).
 
-Sintaxis IF:
+### Sintaxis IF:
 
     If(expresion_logica){
         // Codigo a ejecutar;
     }
 
-Sintaxis IF/ELSE:
+### Sintaxis IF/ELSE:
 
     If(expresion_logica){ 		//Si se cumple
     	// Codigo a ejecutar	//realizo esto
@@ -275,7 +275,7 @@ Ejemplo 1
 
 Se utiliza para repetir un bloque de código mientras una expresión lógica dada sea verdadera (true).
 
-Sintaxis WHILE:
+### Sintaxis WHILE:
 
     while (expresion_logica) {
         // Código a repetir mientras la expresión lógica sea    verdadera
@@ -307,7 +307,7 @@ La repeticion for consta de 3 partes fundamentales
 
 - **Incremento o decremento**: Esto es lo que se hace al final de cada ejecucion del bucle para actualizar la variable de control. Generalmente, se utiliza para aumentar (i++) o disminuir(i--) el valor de la variable de control. 
 
-Sintaxis FOR
+### Sintaxis FOR
 
     for (inicialización; condición; incremento/decremento) {
         // Código a repetir
