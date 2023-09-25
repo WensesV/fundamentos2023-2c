@@ -5,7 +5,7 @@
 Guia de sintaxis para programar en lenguaje C
 
 ## Librerias
-En lenguaje C, las librerías (también conocidas como bibliotecas) son conjuntos de funciones predefinidas que proporcionan una amplia variedad de capacidades y características para facilitar el desarrollo de programas. Estas librerías están disponibles para los programadores para que las utilicen en sus programas C.
+En lenguaje C, las librerías (también conocidas como bibliotecas) son conjuntos de funciones predefinidas que proporcionan una amplia variedad de capacidades y características para facilitar el desarrollo de programas. Estas librerías están disponibles para los programadores que las utilicen en sus programas C.
 En este curso utilizamos las librerias **stdio.h** (para la entrada de datos) y **stdlib.h** (proporciona una variedad de funciones y tipos de datos esenciales para la programación). Las mismas deben ser descritas al comienzo del programa
 
 sintaxis
@@ -96,12 +96,15 @@ al usuario o para depuración. La función printf permite formatear la salida de
     Int num = 7;
     printf("Texto a imprimir con el numero --- %d", numero);
 
-Todo lo que está entre comillas es el texto a mostrar en pantalla, %d es formato que se especifica con una letra (En este caso es d) y, después de la coma, la variable llamada 'numero' que sería de la cual sacamos el valor 7. 
+Todo lo que está entre comillas es el texto a mostrar en pantalla, %d representa un valor de una variable y la letra representa el tipo de dato/formato formato(En este caso es d que representa los números enteros) y, después de la coma, la variable llamada 'numero' que sería de la cual sacamos el valor 7.
+
+Entonces dónde va %d, se escribirá el valor de la variable.
+
 Lo que se debería ver en pantalla es:
 
     Texto a imprimir con el numero --- 7
 
-Los especificadores de formato comunes que puedes utilizar con printf incluyen:
+Los especificadores de formato comunes que puedes utilizar con printf son:
 
 - %d: Imprime un entero decimal.
 - %f: Imprime un número flotante.
