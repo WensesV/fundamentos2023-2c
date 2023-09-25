@@ -20,7 +20,7 @@ Ejemplo
     #include <stdlib.h>
 
 
-## función Main
+## Función Main
 
 Es el algoritmo principal del programa. Todos los programas deben tener una función Main. Es el punto de inicio dónde se ejecutan el programa. La misma al final debe tener un **return 0;**
 
@@ -52,7 +52,8 @@ Sintaxis de un programa
 Ejemplo:
 
 ```bash
-  int num1 = 14;
+  int num1;
+  char letra;
 ```
 
 
