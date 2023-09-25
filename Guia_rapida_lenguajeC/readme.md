@@ -12,10 +12,34 @@ sintaxis
 
     #include <nombre_de_la_libreria>
 
+
+
 Ejemplo
 
     #include <stdio.h>
     #include <stdlib.h>
+
+
+## función Main
+
+Es el algoritmo principal del programa. Todos los programas deben tener una función Main. Es el punto de inicio dónde se ejecutan el programa. La misma al final debe tener un **return 0;**
+
+Sintaxis de un programa 
+
+
+
+    #include <studio.h> //librerias
+
+    int main(){
+
+
+         // código del programa
+
+
+         return 0;   // siempre debe estar incluida en la función Main 
+    }
+
+
 
 ## Variables en C
 
@@ -30,6 +54,19 @@ Ejemplo:
 ```bash
   int num1 = 14;
 ```
+
+
+## Asignar un valor a una variable
+Para asignar una variable a una variable simplemente debemos nombrar a la variable, escribir un signo "=" y segidamente le valor a inggresar en la variable
+como se puede apreciar en los siguientes ejemplos de variables.
+
+
+Ejemplos con diferentes tipos de variables: 
+
+    int edad = 30;
+    float altura = 1.75;
+    char letra = 'W';
+    bool esVerdadero = true;
 
 ## Constantes en C
 
@@ -48,17 +85,6 @@ Ejemplo:
 - Caracteres __(char)__: se utilizan para almacenar caracteres individuales, como letras, números o símbolos.
 - Booleanos __(bool)__: Valores booleanos (Verdadero o falso/True – False)
 
-## Asignar un valor a una variable
-Para asinar una variable a una variable simplemente debemos nombrar a la variable, escribir un signo "=" y segidamente le valor a inggresar en la variable
-como se puede apreciar en los siguientes ejemplos de variables.
-
-
-Ejemplos con diferentes tipos de variables: 
-
-    int edad = 30;
-    float altura = 1.75;
-    char letra = 'W';
-    bool esVerdadero = true;
 
 ## Función printf()
 
