@@ -59,7 +59,9 @@ int main(){
     prom_edad = suma / 40;
     
     //c) Calcular el porcentaje de estudiantes que nacieron en San Luis del total de estudiantes ingresados.
-
+    for (i = 0; i < 40; i++){
+        suma = suma + edad[i];
+    }
 
 
 
