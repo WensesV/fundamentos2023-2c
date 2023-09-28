@@ -59,10 +59,10 @@ int main(){
 
 //b) Indicar cuántas sentencias de Repetición uso y cuántas de selección uso.
 
-Se utilizo dos sentencias de repeticion y dos sentencias de seleccion.
+//Se utilizo dos sentencias de repeticion y dos sentencias de seleccion.
 
 
 //c) Que sentencias de repetición uso. ¿Podría usar solamente la sentencia de repetición for?
 //Justificar.
 
-Respuesta: Se utilizaron dos sentencias de repeticion while, mientras que la primera puede sustituirse por una sentencia de repeticion for, ya que cumple con variable de inicializacion 'ind', una condicon ind < 10, y al final de la ejecucion del codigo interno del while tenemos un incremento de nuestra variable ind.
+//Respuesta: Se utilizaron dos sentencias de repeticion while, mientras que la primera puede sustituirse por una sentencia de repeticion for, ya que cumple con variable de inicializacion 'ind', una condicon ind < 10, y al final de la ejecucion del codigo interno del while tenemos un incremento de nuestra variable ind.
