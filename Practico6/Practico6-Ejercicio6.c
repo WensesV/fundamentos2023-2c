@@ -16,35 +16,52 @@ int main(){
     //declarar las variables necesarias
     int edad[40];
     char nacimiento[40];
-    printf("Ingrese la inicial del nombre de un estudiante\n");
-    scanf("%c",&letra);
-    getchar();
-    // Controlar que sea letra mayúscula.
-    while (letra < 64 || letra > 90){
-        printf("La inicial debe ser en mayusucla, reintente\n");
-        scanf("%c",&letra);
+    int i, cont_d_e, cont_s;
+    float suma, prom_edad;
+    //Ingreso de todos los estudiantes
+    for (i = 0; i < i; i++){
+        printf("Ingrese la inicial del nombre de un estudiante\n");
+        scanf("%c",&letra[i]);
         getchar();
-    }
-    // Ingresar el año de nacimiento del estudiante.
-    printf("Ingrese el año de nacimiento del estudiante\n");
-    scanf("%d",&edad);
-    getchar();
-    // Controlar que la edad en el corriente año, no sea mayor a 75.
-    while (edad < (2023-75)){
-        printf("Edad incorrecta, reintente\n");
-        scanf("%d",&edad);
+        // Controlar que sea letra mayúscula.
+        while (letra < 64 || letra > 90){
+            printf("La inicial debe ser una letra en mayusucla, reintente\n");
+            scanf("%c",&letra[i]);
+            getchar();
+        }
+        // Ingresar el año de nacimiento del estudiante.
+        printf("Ingrese el año de nacimiento del estudiante\n");
+        scanf("%d",&edad[i]);
         getchar();
-    }
-    // Preguntar si dicho estudiante nacio en San Luis.
-    printf("El estudiante nacio en San Luis?Y/N\n");
-    scanf("%c",&nacimiento);
-    getchar();
-    // Controlar la respuesta anterior.
-    while (nacimiento != 'Y' && nacimiento != 'y' && nacimiento != 'N' && nacimiento != 'n'){
-        printf("Respuesta incorrecta, reintente con Y/N\n");
-        scanf("%c",&nacimiento);
+        // Controlar que la edad en el corriente año, no sea mayor a 75.
+        while (edad < (2023-75)){
+            printf("Edad incorrecta, reintente\n");
+            scanf("%d",&edad[i]);
+            getchar();
+        }
+        // Preguntar si dicho estudiante nacio en San Luis.
+        printf("El estudiante nacio en San Luis?Y/N\n");
+        scanf("%c",&nacimiento[i]);
         getchar();
+        // Controlar la pregunta anterior anterior.
+        while (nacimiento != 'Y' && nacimiento != 'y' && nacimiento != 'N' && nacimiento != 'n'){
+            printf("Respuesta incorrecta, reintente con Y/N\n");
+            scanf("%c",&nacimiento[i]);
+            getchar();
+        }
     }
+    //c) Calcular el porcentaje de estudiantes que nacieron en San Luis del total de estudiantes ingresados.
+    for (i = 0; i < 40; i++){
+        suma = suma + edad[i];
+    }
+    prom_edad = suma / 40;
+    
+
+
+
+
+
+
     // Mostrar con carteles adecuados, todos los datos solicitados. Y la edad del estudiante.
     printf("---Informacion del estudiante---\n");
     printf("Inicial del nombre: %c\n", letra);
