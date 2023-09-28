@@ -50,13 +50,15 @@ int main(){
             getchar();
         }
     }
-    //c) Calcular el porcentaje de estudiantes que nacieron en San Luis del total de estudiantes ingresados.
+    
+    // b) Calcular el promedio de edad de los estudiantes ingresados
+    
     for (i = 0; i < 40; i++){
         suma = suma + edad[i];
     }
     prom_edad = suma / 40;
     
-
+    //c) Calcular el porcentaje de estudiantes que nacieron en San Luis del total de estudiantes ingresados.
 
 
 
