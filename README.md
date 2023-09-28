@@ -27,7 +27,9 @@ Ejercicios resueltos + Guia Lenguaje C
 ------------------------
 
 ## Novedades
+- Práctico 4 - Completo
 - Práctico 5 - Completo
+- Práctico 6 - Hasta ejercicio 6
 - Nuevo: Guías para Lenguaje C 
 - Nuevo: Ejecutables de los ejercicios en carpeta Output
 
