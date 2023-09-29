@@ -34,7 +34,7 @@ return 0;
 
 /*● ¿Soluciona alguno de los puntos del ejercicio 1?
 ● Realizar el diagrama de flujo del código dado.
-● Ejecutar (tabla de ejecución) para un valor de cant igual a 4 */
+● Ejecutar (tabla de ejecución) para un valor de cant igual a 4
 
 |                                |        DATOS[]        |
 |    Sentencias                  |  0  |  1  |  2  |  3  |  cant  |  i  |                  Pantalla                  |
@@ -79,7 +79,7 @@ return 0;
 |i++                             |     |     |     |     |        |  4  |                                            |
 |i<cant?F                        |     |     |     |     |        |     |                                            |
 |return 0;                       |     |     |     |     |        |     |                                            |
-
+*/
 
 
 
