@@ -35,3 +35,56 @@ return 0;
 /*● ¿Soluciona alguno de los puntos del ejercicio 1?
 ● Realizar el diagrama de flujo del código dado.
 ● Ejecutar (tabla de ejecución) para un valor de cant igual a 4 */
+
+|                                |        DATOS[]        |
+|    Sentencias                  |  0  |  1  |  2  |  3  |  cant  |  i  |                  Pantalla                  |
+|printf()                        |     |     |     |     |        |     |Ingrese la cantidad de letras de su nombre: |
+|scanf("%d",&cant); getchar();   |     |     |     |     |    4   |     |                                            |
+|while (cant<3 || cant>20)F      |     |     |     |     |        |  0  |                                            |
+|i=0;                            |     |     |     |     |        |     |                                            |
+|i<cant?V                        |     |     |     |     |        |     |                                            |
+|printf();                       |     |     |     |     |        |     |Ingrese una letra:                          |
+|scanf("%c",&DATOS[i]);getchar();|  W  |     |     |     |        |     |                                            |
+|While(Control)F;                |     |     |     |     |        |     |                                            |
+|i++                             |     |     |     |     |        |  1  |                                            |
+|i<cant?V                        |     |     |     |     |        |     |                                            |
+|printf();                       |     |     |     |     |        |     |Ingrese una letra:                          |
+|scanf("%c",&DATOS[i]);getchar();|     |  e  |     |     |        |     |                                            |
+|While(Control)F;                |     |     |     |     |        |     |                                            |
+|i++                             |     |     |     |     |        |  2  |                                            |
+|i<cant?V                        |     |     |     |     |        |     |                                            |
+|printf();                       |     |     |     |     |        |     |Ingrese una letra:                          |
+|scanf("%c",&DATOS[i]);getchar();|     |     |  n  |     |        |     |                                            |
+|While(Control)F;                |     |     |     |     |        |     |                                            |
+|i++                             |     |     |     |     |        |  3  |                                            |
+|i<cant?V                        |     |     |     |     |        |     |                                            |
+|printf();                       |     |     |     |     |        |     |Ingrese una letra:                          |
+|scanf("%c",&DATOS[i]);getchar();|     |     |     |  s  |        |     |                                            |
+|While(Control)F;                |     |     |     |     |        |     |                                            |
+|i++                             |     |     |     |     |        |  4  |                                            |
+|i<cant?F                        |     |     |     |     |        |     |                                            |
+|printf();                       |     |     |     |     |        |     |Mi nombre es:                               |
+|i = 0;                          |     |     |     |     |        |     |                                            |
+|i<cant?V                        |     |     |     |     |        |     |                                            |
+|printf("%c",DATOS[i]);          |     |     |     |     |        |     |W                                           |
+|i++                             |     |     |     |     |        |  1  |                                            |
+|i<cant?V                        |     |     |     |     |        |     |                                            |
+|printf("%c",DATOS[i]);          |     |     |     |     |        |     |e                                           |
+|i++                             |     |     |     |     |        |  2  |                                            |
+|i<cant?V                        |     |     |     |     |        |     |                                            |
+|printf("%c",DATOS[i]);          |     |     |     |     |        |     |n                                           |
+|i++                             |     |     |     |     |        |  3  |                                            |
+|i<cant?V                        |     |     |     |     |        |     |                                            |
+|printf("%c",DATOS[i]);          |     |     |     |     |        |     |s                                           |
+|i++                             |     |     |     |     |        |  4  |                                            |
+|i<cant?F                        |     |     |     |     |        |     |                                            |
+|return 0;                       |     |     |     |     |        |     |                                            |
+
+
+
+
+
+
+
+
+

@@ -330,3 +330,17 @@ Muestra por pantalla
     3
     4
     5
+## Arreglos
+Es una estructura de datos que permite almacenar una colección de elementos del mismo tipo de datos bajo un solo nombre. Cada elemento en un arreglo se almacena en una ubicación de memoria consecutiva y se accede a ellos mediante un índice.
+
+Sintaxis
+
+        tipo_de_datos nombre[dimension];
+
+Ejemplo
+
+        int numeros[5]; // Declaración de un arreglo de enteros con capacidad para 5 elementos
+ La cantidad de elementos que tiene un arreglo es declarada como la **dimension** del mismo. Para acceder a los elementos de un arreglo debemos utilizar una variable de indice para saber cual de los elementos vamos a ingresar/leer en del arreglo.
+
+ A tener en cuenta, supongamos que nosotros declaramos un arreglo de dimension 4. El mismo empieza con el indice desde el 0, y termina en el 3 dandonos asi 4 elementos a guardar. Es decir, que si nosotros queremos guardar informacion para el elemento 1 deberiamos escribir arreglo[0], para el segundo elemento arreglo[1] para el tercero arreglo[2] y para el elemento 4, arreglo[3].
+
