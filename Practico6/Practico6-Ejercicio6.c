@@ -12,19 +12,34 @@ Finalmente, mostrar claramente los valores calculados en b), c) y d). */
 #include <stdlib.h>
 
 int main(){
+    //declarar las variables necesarias.
     char letra[40];
-    //declarar las variables necesarias
     int edad[40];
     char nacimiento[40];
-    int i, cont_d_e, cont_s;
-    float suma, prom_edad;
-    //Ingreso de todos los estudiantes
-    for (i = 0; i < i; i++){
+    int i, cant, cont_de;
+    float suma, prom_edad, prom_nac;
+    cont_de = 0;
+    suma = 0;
+
+    //Ingreso de la cantidad de alumnos.
+    printf("Ingrese la cantidad de estudiantes a ingresar (Máximo 40\n");
+    scanf("%d",&cant);
+    getchar();
+    // Controlar que sea letra mayúscula.
+    while ((cant < 0) || (cant >= 40)){
+        printf("Cantidad indicada incorrecta, reintente\n");
+        scanf("%d",&cant);
+        getchar();
+    }
+    
+
+    //Ingreso de todos los estudiantes.
+    for (i = 0; i < cant; i++){
         printf("Ingrese la inicial del nombre de un estudiante\n");
         scanf("%c",&letra[i]);
         getchar();
         // Controlar que sea letra mayúscula.
-        while (letra < 64 || letra > 90){
+        while (letra[i] < 64 || letra[i] > 90){
             printf("La inicial debe ser una letra en mayusucla, reintente\n");
             scanf("%c",&letra[i]);
             getchar();
@@ -50,33 +65,68 @@ int main(){
             getchar();
         }
     }
+
+    printf("\n Ingreso Exitoso \n\n\n");
+
+    //b) Calcular el promedio de edad de los estudiantes ingresados
     
-    // b) Calcular el promedio de edad de los estudiantes ingresados
+    for (i = 0; i < cant; i++){
+        suma = suma + edad[i];}
+    prom_edad = suma / cant;
+    printf("El promedio de edad de los %d estudiantes es de: %f \n", cant, prom_edad);
     
-    for (i = 0; i < 40; i++){
-        suma = suma + edad[i];
+    //c) Calcular el porcentaje de estudiantes que nacieron en San Luis del total de estudiantes ingresados
+    suma = 0;
+    for (i = 0; i < cant; i++){
+        if ((nacimiento[i] == 'y') || (nacimiento[i] == 'Y'))
+        {
+            suma++;
+        }
     }
-    prom_edad = suma / 40;
-    
-    //c) Calcular el porcentaje de estudiantes que nacieron en San Luis del total de estudiantes ingresados.
-    for (i = 0; i < 40; i++){
-        suma = suma + edad[i];
+    prom_nac = (suma / cant) * 100;
+    printf("El porcentaje de los estudiantes que nacieron en San Luis de los %d estudiantes es de: %f %\n\n\n", cant, prom_nac);
+
+    //d) Calcular la cantidad de estudiantes cuya inicial está entre las letras „D‟ y „G‟.
+
+    for(i = 0; i < cant; i++){
+        if(((letra[i] < 'D') && (letra[i] < 'G')) || ((letra[i] < 'd') && (letra[i] < 'g'))){
+            cont_de++;
+        }
+    }
+    printf("La cantidad de estudiantes cuya inicial está entre las letras „D‟ y „G‟ es de: %d \n\n\n", cont_de);
+
+    //e) Mostrar todos los datos de los estudiantes cuya inicial del nombre sea „S‟.
+
+    printf("A continuacion se mostrará todos los datos de los estudiantes cuya inicial del nombre sea 's' \n");
+    for (i = 0; i < cant; i++){
+        if ((letra[i] == 's' || letra[i] == 'S'))
+        {
+            printf("---Informacion del estudiante %d---\n", i+1);
+            printf("Inicial del nombre: %c\n", letra[i]);
+            printf("Nacio en San Luis:");
+            if(nacimiento[i] == 'y' || nacimiento[i] == 'Y'){
+                printf(" Si\n");
+            }
+            else{
+                printf(" No\n");
+            }
+            printf("Año de nacimiento: %d\n \n ", edad[i]);
+        }
+        
     }
 
+    //f) Mostrar todos los datos de los estudiantes que no nacieron en San Luis.
 
-
-
-    // Mostrar con carteles adecuados, todos los datos solicitados. Y la edad del estudiante.
-    printf("---Informacion del estudiante---\n");
-    printf("Inicial del nombre: %c\n", letra);
-    printf("Nacio en San Luis:");
-    if(nacimiento == 'y' || nacimiento == 'Y'){
-        printf(" Si\n");
+    printf("A continuacion se mostrará todos los datos de los estudiantes que no nacieron en San Luis \n");
+    for (i = 0; i < cant; i++){
+        if ((nacimiento[i] == 'y') || (nacimiento[i] == 'Y'))
+        {
+            printf("---Informacion del estudiante %d---\n", i+1);
+            printf("Inicial del nombre: %c\n", letra[i]);
+            printf("Nacio en San Luis: No \n");
+            printf("Año de nacimiento: %d\n \n ", edad[i]);
+        }
+        
     }
-    else{
-        printf(" No\n");
-    }
-    printf("Año de nacimiento: %d\n", edad);
-    getchar();
     return 0;
 }
