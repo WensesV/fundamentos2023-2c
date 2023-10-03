@@ -74,7 +74,6 @@ int main(){
         suma = suma + (2023 - edad[i]);
     }
     prom_edad = suma / cant;
-    printf("El promedio de edad de los %d estudiantes es de: %f \n", cant, prom_edad);
 
 
     //c) Calcular el porcentaje de estudiantes que nacieron en San Luis del total de estudiantes ingresados
@@ -86,7 +85,6 @@ int main(){
         }
     }
     prom_nac = (suma / cant) * 100;
-    printf("El porcentaje de los estudiantes que nacieron en San Luis de los %d estudiantes es de: %f \n\n\n", cant, prom_nac);
 
     //d) Calcular la cantidad de estudiantes cuya inicial está entre las letras D‟ y „G‟.
 
@@ -95,8 +93,6 @@ int main(){
             cont_de++;
         }
     }
-    printf("La cantidad de estudiantes cuya inicial está entre las letras D y G es de: %d \n\n\n", cont_de);
-
     //e) Mostrar todos los datos de los estudiantes cuya inicial del nombre sea „S‟.
 
     printf("A continuacion se mostrará todos los datos de los estudiantes cuya inicial del nombre sea 'S' \n \n");
@@ -130,5 +126,9 @@ int main(){
         }
         
     }
+
+    printf("El porcentaje de los estudiantes que nacieron en San Luis de los %d estudiantes es de: %f \n\n\n", cant, prom_nac);
+    printf("El promedio de edad de los %d estudiantes es de: %f \n", cant, prom_edad);
+    printf("La cantidad de estudiantes cuya inicial está entre las letras D y G es de: %d \n\n\n", cont_de);
     return 0;
 }

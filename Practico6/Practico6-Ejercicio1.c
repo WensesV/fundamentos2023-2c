@@ -68,4 +68,5 @@ almacenar la información.
 |               |     Persona 1   |     Persona 2   |     Persona 3   |      Persona 4    |      Persona (n)   |     ...        |
 |     nombre    |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  10  |  11  |  12  |  13  |  14  |  15  |   Tipo  |
 |   nacimiento  | dia | mes | año | dia | mes | año | dia | mes | año | dia |  mes |  año |  dia |  mes |  año |  ... |    int  |
+
 */
