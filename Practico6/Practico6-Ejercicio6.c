@@ -19,7 +19,7 @@ int main(){
     int i, cant, cont_de;
     float suma, prom_edad, prom_nac;
     cont_de = 0;
-    suma = 0;
+    suma = 0.0;
 
     //Ingreso de la cantidad de alumnos.
     printf("Ingrese la cantidad de estudiantes a ingresar (Máximo 40\n");
@@ -49,7 +49,7 @@ int main(){
         scanf("%d",&edad[i]);
         getchar();
         // Controlar que la edad en el corriente año, no sea mayor a 75.
-        while (edad < (2023-75)){
+        while ((2023 - edad[i]) > (75)){
             printf("Edad incorrecta, reintente\n");
             scanf("%d",&edad[i]);
             getchar();
@@ -59,7 +59,7 @@ int main(){
         scanf("%c",&nacimiento[i]);
         getchar();
         // Controlar la pregunta anterior anterior.
-        while (nacimiento != 'Y' && nacimiento != 'y' && nacimiento != 'N' && nacimiento != 'n'){
+        while ((nacimiento[i] != 'Y') && (nacimiento[i] != 'y') && (nacimiento[i] != 'N') && (nacimiento[i] != 'n')){
             printf("Respuesta incorrecta, reintente con Y/N\n");
             scanf("%c",&nacimiento[i]);
             getchar();
@@ -69,12 +69,14 @@ int main(){
     printf("\n Ingreso Exitoso \n\n\n");
 
     //b) Calcular el promedio de edad de los estudiantes ingresados
-    
+
     for (i = 0; i < cant; i++){
-        suma = suma + edad[i];}
+        suma = suma + (2023 - edad[i]);
+    }
     prom_edad = suma / cant;
     printf("El promedio de edad de los %d estudiantes es de: %f \n", cant, prom_edad);
-    
+
+
     //c) Calcular el porcentaje de estudiantes que nacieron en San Luis del total de estudiantes ingresados
     suma = 0;
     for (i = 0; i < cant; i++){
@@ -84,22 +86,22 @@ int main(){
         }
     }
     prom_nac = (suma / cant) * 100;
-    printf("El porcentaje de los estudiantes que nacieron en San Luis de los %d estudiantes es de: %f %\n\n\n", cant, prom_nac);
+    printf("El porcentaje de los estudiantes que nacieron en San Luis de los %d estudiantes es de: %f \n\n\n", cant, prom_nac);
 
-    //d) Calcular la cantidad de estudiantes cuya inicial está entre las letras „D‟ y „G‟.
+    //d) Calcular la cantidad de estudiantes cuya inicial está entre las letras D‟ y „G‟.
 
     for(i = 0; i < cant; i++){
-        if(((letra[i] < 'D') && (letra[i] < 'G')) || ((letra[i] < 'd') && (letra[i] < 'g'))){
+        if(((letra[i] >= 'D') && (letra[i] <= 'G'))){
             cont_de++;
         }
     }
-    printf("La cantidad de estudiantes cuya inicial está entre las letras „D‟ y „G‟ es de: %d \n\n\n", cont_de);
+    printf("La cantidad de estudiantes cuya inicial está entre las letras D y G es de: %d \n\n\n", cont_de);
 
     //e) Mostrar todos los datos de los estudiantes cuya inicial del nombre sea „S‟.
 
-    printf("A continuacion se mostrará todos los datos de los estudiantes cuya inicial del nombre sea 's' \n");
+    printf("A continuacion se mostrará todos los datos de los estudiantes cuya inicial del nombre sea 'S' \n \n");
     for (i = 0; i < cant; i++){
-        if ((letra[i] == 's' || letra[i] == 'S'))
+        if ((letra[i] == 'S'))
         {
             printf("---Informacion del estudiante %d---\n", i+1);
             printf("Inicial del nombre: %c\n", letra[i]);
@@ -119,7 +121,7 @@ int main(){
 
     printf("A continuacion se mostrará todos los datos de los estudiantes que no nacieron en San Luis \n");
     for (i = 0; i < cant; i++){
-        if ((nacimiento[i] == 'y') || (nacimiento[i] == 'Y'))
+        if ((nacimiento[i] == 'n') || (nacimiento[i] == 'N'))
         {
             printf("---Informacion del estudiante %d---\n", i+1);
             printf("Inicial del nombre: %c\n", letra[i]);
