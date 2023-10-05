@@ -12,7 +12,7 @@ Posteriormente el programa debe informar:
 a) Porcentaje de estudiantes con menos de 5 asistencias.
 b) El promedio de recursantes, sobre el total de estudiantes.
 c) Cantidad de aprobados en la 1 instancia con más de 7 asistencias.
-d) Cantidad de Ausentes en la 1° instancia. 
+d) Cantidad de Ausentes en la 1° instancia.
 e) Mostrar por pantalla el número de DNI y la cantidad de asistencia de todos los
 estudiantes que aprobaron el 1er parcial.*/
 
@@ -50,12 +50,14 @@ T8 Mostrar el numero de DNI y la cantidad de asistencia de todos los estudiantes
 int main(){
     //T1 Definir variables
     int alumnos[120*6];
-    int i, k, cant, contP1;
+    int i, k, cant;
+    int aprueba = 0;
     int contP1 = 0;
     int j = 1;
     float cont_asist = 0;
     float cont_recurs;
     float porc_asist, prom_recurs;
+    char presente;
 
     printf("Cuantos estudiantes desea ingresar? %d\n", j);
     scanf("%d",&cant);
@@ -78,54 +80,68 @@ int main(){
         }
         // Recursante si o no
         printf("El alumno %d es recursante? S/N \n", j);
-        scanf("%c",&alumnos[i+1]);
+        scanf("%c",&presente);
         getchar();
-        while ((alumnos[i+1] != 'S') && (alumnos[i+1] != 's') && (alumnos[i+1] != 'N') && (alumnos[i+1] != 'n') ){
-            printf("Error, ingrese solo una 'S' o una 'N'\n", j);
-            scanf("%c",&alumnos[i+1]);
+        while ((presente != 'S') && (presente != 's') && (presente != 'N') & (presente != 'n')){
+            printf("Error, ingrese solo una 'S' o una 'N'\n");
+            scanf("%c", &presente);
             getchar();
         }
         // Cantidad de asistencias
         printf("Ingrese la cantidad de asistencias del estudiante %d\n", j);
         scanf("%d",&alumnos[i+2]);
         getchar();
-        while ((alumnos[i+2] > 0) || ((alumnos[i+2]) < 15))
+        while ((alumnos[i+2] < 0) || ((alumnos[i+2]) > 15))
         {
-            printf("Error, el maximo de asistencias es de 15\n", j);
+            printf("Error, el maximo de asistencias es de 15\n");
             scanf("%d",&alumnos[i+2]);
             getchar();
         }
         //Ingreso de notas 1
-        for (k = 0; k < 3; k++)
-        {   //ingreso asistencia a la evaluacion
-            printf("El alumno %d estuvo presente en la instancia %d de evaluacion? S/N \n", k+1);
-            scanf("%d",&alumnos[i+(3+k)]);
-            getchar();
-            //Control de respuesta
-            while ((alumnos[i+(3+k)] != 'S') && (alumnos[i+(3+k)] != 's') && (alumnos[i+(3+k)] != 'N') && (alumnos[i+(3+k)] != 'n') )
-            {
-                printf("Error, ingrese solo una 'S' o una 'N'\n");
-                scanf("%c",&alumnos[i+(3+k)]);
+        //aprueba = 0;
+        for (k = 0, aprueba = 0; k < 3; k++){
+            if(aprueba == 0){
+                //ingreso asistencia a la evaluacion
+                printf("El alumno %d estuvo presente en la instancia %d de evaluacion? S/N \n", j, k+1);
+                scanf("%c",&presente);
                 getchar();
-            }
-            if ((alumnos[i+(3+k)] == 's') || (alumnos[i+(3+k)] == 'S'))
-            {   //Si estuvo presente ingresa la nota
-                printf("Ingrese el resultado de la evaluacion %d \n", k+1);
-                scanf("%d",&alumnos[i+(3+k)]);
-                getchar();
-                // Control de la nota
-                while ((alumnos[i+(3+k)] < 0) || (alumnos[i+(3+k)] > 10))
+                //Control de respuesta
+                while ((presente != 'S') && (presente != 's') && (presente != 'N') & (presente != 'n'))
                 {
-                    printf("Nota mal ingresada, por favor, reintente\n");
-                    scanf("%d",&alumnos[i+(3+k)]);
+                    printf("Error, ingreso '%c' ,ingrese solo una 'S' o una 'N'\n", alumnos[i+(3+k)]);
+                    scanf("%c", &presente);
                     getchar();
                 }
+                if ((presente == 's') || (presente == 'S'))
+                {   //Si estuvo presente ingresa la nota
+                    printf("Ingrese el resultado de la evaluacion %d \n", k+1);
+                    scanf("%d",&alumnos[i+(3+k)]);
+                    getchar();
+                    // Control de la nota
+                    while ((alumnos[i+(3+k)] < 0) || (alumnos[i+(3+k)] > 10))
+                    {
+                        printf("Nota mal ingresada, por favor, reintente\n");
+                        scanf("%d",&alumnos[i+(3+k)]);
+                        getchar();
+                    }
+                    if (alumnos[i+(3+k)] >= 7)
+                    {
+                        aprueba = 1;
+                    }
+                    
+                }
+                else{ //Si estuvo ausente ingresa el -1
+                    alumnos[i+(3+k)] = -1;
+                }
             }
-            else{ //Si estuvo ausente ingresa el -1
-                alumnos[i+(3+k)] = -1;
+            else{
+                alumnos[i+(3+k)] = 0;
             }
         }
+    j++;
+
     }
+    j = 0;
     //T4 Mostrar el porcentaje de estudiantes con menos de 5 asistencias.
     for (i = 0; i < cant*6; i = i+6){
         if(alumnos[i+2] < 5){
@@ -153,8 +169,8 @@ int main(){
     printf("Lista de alumnos aprobados\n");
     for (i = 0; i < cant*6; i = i+6){
         if(alumnos[i+3] < 7){
-            Printf("DNI: %d -", alumnos[i+3]);
-            Printf("Asistencias: %d \n \n", alumnos[i+3]);
+            printf("DNI: %d -", alumnos[i+3]);
+            printf("Asistencias: %d \n \n", alumnos[i+3]);
         }
     }
 
