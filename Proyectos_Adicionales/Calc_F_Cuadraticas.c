@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <math.h> //Agregamos esta libreria para poder utilizar algunas funciones matematicas
+#include <math.h> //Agregamos esta libreria para poder utilizar algunas funciones matematicas, como por ejemplo. Raiz cuadrade de un numero
 
 
 float discriminante(float a, float b , float c){
@@ -11,19 +11,31 @@ float discriminante(float a, float b , float c){
 
 float raiz1(float x, float y, float p){
     float res1;
-    res1 = ((-y)+p)/(2*x);
+    res1 = ((-y)+(sqrt(p)))/(2*x);
     return(res1);
 }
 
-float raiz2(x,y,p){
+float raiz2(float x,float y,float p){
     float res2;
-    res2 = ((-y)-p)/(2*x);
+    res2 = ((-y)-(sqrt(p)))/(2*x);
     return(res2);
+}
+
+float verticex(float x, float y){
+    float res3;
+    res3 = (-y)/(2*x);
+    return(res3);
+}
+
+float verticey(float x, float y, float z, float v){
+    float res4;
+    res4 = (x*(v*v))+(y*v)+(z);
+    return(res4);
 }
 
 int main()
 {
-    float a, b, c, d, x1, x2;
+    float a, b, c, d, x1, x2, vx, vy;
     int exit = 1;
     while (exit == 1) 
     {
@@ -43,11 +55,15 @@ int main()
         scanf("%f", &b);
         getchar();
 
-        printf("Ingrese el valor de a:\n");
-        scanf("%f", &b);
+        printf("Ingrese el valor de c:\n");
+        scanf("%f", &c);
         getchar();
 
-        d = discriminante(a,b,c); 
+        d = discriminante(a,b,c);
+
+        vx = verticex(a,b);
+
+        vy = verticey(a,b,c,vx); 
 
         if (d == 0)
         {
@@ -67,8 +83,18 @@ int main()
         }
 
         printf("Su ordenada al origen es el valor %f \n", c);
-        
+        printf("El vertice de la ecuacion cuadratica esta en el punto: ( %f , %f)", vx, vy);
+
+        printf("Desea calcular otra ecuacion cuadratica? 1 = Reintentar, 0 = Salir\n");
+        scanf("%d", &exit);
+        getchar();
+        while((exit != 0) && (exit != 1)){
+            printf("Debe ingresar o 0, o 1. Reintente\n");
+            scanf("%d", &exit);
+            getchar();
+        }
     }
-    
+    printf("Gracias por utilizar la calculadora de funciones cuadratica creada por WensesV\n");
+    getchar();
     return 0;
 }
