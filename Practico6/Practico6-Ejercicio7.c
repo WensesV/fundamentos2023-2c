@@ -50,8 +50,12 @@ T8 Mostrar el numero de DNI y la cantidad de asistencia de todos los estudiantes
 int main(){
     //T1 Definir variables
     int alumnos[120*6];
-    int i, k, cant;
+    int i, k, cant, contP1;
+    int contP1 = 0;
     int j = 1;
+    float cont_asist = 0;
+    float cont_recurs;
+    float porc_asist, prom_recurs;
 
     printf("Cuantos estudiantes desea ingresar? %d\n", j);
     scanf("%d",&cant);
@@ -95,16 +99,16 @@ int main(){
         for (k = 0; k < 3; k++)
         {   //ingreso asistencia a la evaluacion
             printf("El alumno %d estuvo presente en la instancia %d de evaluacion? S/N \n", k+1);
-            scanf("%d",&alumnos[i+3]);
+            scanf("%d",&alumnos[i+(3+k)]);
             getchar();
             //Control de respuesta
-            while ((alumnos[i+3] != 'S') && (alumnos[i+3] != 's') && (alumnos[i+3] != 'N') && (alumnos[i+3] != 'n') )
+            while ((alumnos[i+(3+k)] != 'S') && (alumnos[i+(3+k)] != 's') && (alumnos[i+(3+k)] != 'N') && (alumnos[i+(3+k)] != 'n') )
             {
                 printf("Error, ingrese solo una 'S' o una 'N'\n");
-                scanf("%c",&alumnos[i+1]);
+                scanf("%c",&alumnos[i+(3+k)]);
                 getchar();
             }
-            if ((alumnos[i+3] == 's') || (alumnos[i+3] == 'S'))
+            if ((alumnos[i+(3+k)] == 's') || (alumnos[i+(3+k)] == 'S'))
             {   //Si estuvo presente ingresa la nota
                 printf("Ingrese el resultado de la evaluacion %d \n", k+1);
                 scanf("%d",&alumnos[i+(3+k)]);
@@ -122,6 +126,38 @@ int main(){
             }
         }
     }
+    //T4 Mostrar el porcentaje de estudiantes con menos de 5 asistencias.
+    for (i = 0; i < cant*6; i = i+6){
+        if(alumnos[i+2] < 5){
+            cont_asist++;
+        }
+    }
+    porc_asist = cont_asist / (cant * 100);
+    printf("El porcentaje de asistencias de los %d alumnos es de: %f \n", cant, porc_asist);
+    //T5 Mostrar el promedio de alumnos recrusantes, sobre el total de estudiantes.
+    for (i = 0; i < cant*6; i = i+6){
+        if((alumnos[i+1] == 'S') || (alumnos[i+1] == 's') ){
+            cont_recurs++;
+        }
+        prom_recurs = (cont_recurs * 100) / cant;
+    }
+    printf("El promedio de recrusantes de los %d alumnos es de: %f \n", cant, prom_recurs);
+    //T7 Mostrar la cantidad de ausentes en la primera instancia.
+    for (i = 0; i < cant*6; i = i+6){
+        if (alumnos[i+3] == -1){
+            contP1++;
+        }
+    }
+    printf("La cantidad de ausentes en la primera instancia es de %d \n", contP1);
+    // T8 Mostrar el numero de DNI y la cantidad de asistencia de todos los estudiantes que aprobaron el primer parcial.
+    printf("Lista de alumnos aprobados\n");
+    for (i = 0; i < cant*6; i = i+6){
+        if(alumnos[i+3] < 7){
+            Printf("DNI: %d -", alumnos[i+3]);
+            Printf("Asistencias: %d \n \n", alumnos[i+3]);
+        }
+    }
+
     return 0;
 }
 
