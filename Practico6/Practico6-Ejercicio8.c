@@ -78,7 +78,7 @@ int main()
         }
     }
     //Realizamos esta ultima accion por la vaga redaccion del enunciado. Deja en duda si hay que mostrar todos los procesos a la vez o si hay que hacerlos en partes.
-    //De igual manera, en caso de que hubiese que mostrar todas las comaraciones en un solo recorrido de arreglo  simplificariamos el proceso utilizando un solo for en vez de tres, y usariamos las condidiones de los mismos If para mostrar en pantalla
+    //De igual manera, en caso de que hubiese que mostrar todas las comparaciones en un solo recorrido de arreglo, simplificariamos el proceso utilizando un solo for en vez de tres, y usariamos las condidiones de los mismos If para mostrar en pantalla
     return 0;
 }
 

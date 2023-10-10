@@ -7,3 +7,10 @@ es alumno en la materia y en caso de ser alumno informar la nota en cada parcial
 Finalmente, informar los números de registro de los alumnos que no aprueban los parcialitos
 (aprueban si el promedio total de los 4 parcialitos es 7 o más).
 */
+
+
+Datos auxiliares
+Unico arreglo
+Datos a ingresar
+    numero de registro
+    Notas de 4 parcialitos
