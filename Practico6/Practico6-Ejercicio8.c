@@ -27,7 +27,9 @@ int main()
     float coseno[50];
     float n_radian;
     int cant, i;
-    // ingreso cant
+    int bool1 = 0;
+    int bool2 = 0;
+    // ingreso cantidad
     printf("Cuantos numeros reales desea ingresar? \n");
     scanf("%d",&cant);
     getchar();
@@ -58,6 +60,9 @@ int main()
         if (seno[i] > 0){
             printf("seno ( %f ) = %f \n", numeros[i], seno[i]);
         }
+        else{
+            bool1 = 1;
+        }
         
     }
     //Mostrar todos los coseno negativos
@@ -66,7 +71,12 @@ int main()
         if (seno[i] > 0){
             printf("Cos ( %f ) = %f \n", numeros[i], seno[i]);
         }
+        else{
+            bool2 = 1;
+        }
     }
+
+
     //Dado el enunciado, mostraremos de manera siguiente si uno de los dos es positivo y negativo, o si ambos son positivos
     printf("Datos adicionales \n");
     for (i = 0; i < cant; i++){
