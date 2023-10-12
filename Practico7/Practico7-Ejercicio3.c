@@ -8,7 +8,8 @@ La idea de la función permuta es intercambiar los valores de pact1 y pact2 ¿es
 Realizar la tabla de ejecución y justificar su respuesta
 */
 
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int permuta (int pf[]) {
     int temp;

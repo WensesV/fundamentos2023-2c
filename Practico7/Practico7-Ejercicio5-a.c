@@ -7,6 +7,7 @@ o Analizar el código de la página 59. ¿Qué realiza ese código?
 o Porque para ingresar datos en el arreglo Cur_B no se utilizó la función Ingreso?*/
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
 int i, cuantos;
@@ -63,5 +64,5 @@ o ¿Qué me permite realizar esta función?
 o Analizar el código de la página 59. ¿Qué realiza ese código?
     Respuesta: Ingresa numeros a 3 arreglos diferentes
 o Porque para ingresar datos en el arreglo Cur_B no se utilizó la función Ingreso?
-    Respuesta: 
+    Respuesta: Porque los valores de la condicion de verdad del For necesitaria estar de forma opuesta para poder realizar el ingreso de forma inversa, en vez de esperar el numero menor a "i", deberia esperar un valor mayor al esperado.
 */
