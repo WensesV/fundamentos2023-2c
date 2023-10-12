@@ -37,8 +37,7 @@ int main()
 {
     float a, b, c, d, x1, x2, vx, vy;
     int exit = 1;
-    while (exit == 1) 
-    {
+    while (exit == 1){
         printf("Calculadora para resolver ecuaciones cuadratica\n");
         printf("Suponiendo que la ecuacion general de una ecuacion cuadratica es: ax^2 + bx + c \n");
         printf("Ingrese el valor de a:\n");
@@ -50,41 +49,30 @@ int main()
             scanf("%f", &a);
             getchar();
         }
-
         printf("Ingrese el valor de b:\n");
         scanf("%f", &b);
         getchar();
-
         printf("Ingrese el valor de c:\n");
         scanf("%f", &c);
         getchar();
-
         d = discriminante(a,b,c);
-
         vx = verticex(a,b);
-
-        vy = verticey(a,b,c,vx); 
-
-        if (d == 0)
-        {
+        vy = verticey(a,b,c,vx);
+        if (d == 0){
             x1 = raiz1(a,b,d);
             x2 = x1;
             printf("La unica solucion a la ecuacion es: %f \n", x1);
         }
-        if (d > 0)
-        {
+        if (d > 0){
             x1 = raiz1(a,b,d);
             x2 = raiz2(a,b,d);
             printf("Las soluciones a la ecuacion es: x1 = %f, x2 = %f \n", x1, x2);
-        } 
-        if (d < 0)
-        {
+        }
+        if (d < 0){
             printf("La ecuacion cuadratica no tiene soluciones reales");
         }
-
         printf("Su ordenada al origen es el valor %f \n", c);
         printf("El vertice de la ecuacion cuadratica esta en el punto: ( %f , %f)", vx, vy);
-
         printf("Desea calcular otra ecuacion cuadratica? 1 = Reintentar, 0 = Salir\n");
         scanf("%d", &exit);
         getchar();
