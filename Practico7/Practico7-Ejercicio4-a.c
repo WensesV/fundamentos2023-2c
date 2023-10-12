@@ -10,24 +10,21 @@ Realizar la tabla de ejecución y justificar su respuesta
 
 #include<stdio.h>
 
-int permuta (int pf[]) {
-    int temp;
-    temp = pf[0];
-    pf[0] = pf[1];
-    pf[1] = temp;
-    return(0);
+int pact1 = 110, pact2 = 225;
+
+int permuta(){
+int temp;
+temp = pact1;
+pact1 = pact2;
+pact2 = temp;
+return(0);
 }
 
-
-int main(){
-    int pact[2];
-    pact[0] = 110;
-    pact[1] = 225;
-    printf("El valor de pact[0] es %d y el valor de pact[1] es %d \n", pact[0], pact[1]);
-    permuta(pact);
-    printf("El valor de pact[0] es %d y el valor de pact[1] es %d \n", pact[0], pact[1]);
-    getchar();
-    return (0);
+int main ( ) {
+printf("El valor de pact1 es %d y el valor de pact2 es %d \n", pact1, pact2);
+permuta();
+printf("El valor de pact1 es %d y el valor de pact2 es %d \n", pact1, pact2);
+return(0);
 }
 
 /*

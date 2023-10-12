@@ -10,7 +10,7 @@ valores de los parámetros valor1 y el valor2. En todo otro caso retornar un 0.
 
 int ValidaNros ( int dato, int valor1, int valor2){
     int bool;
-    if (dato < valor1 && dato > valor2)
+    if ((dato < valor1) && (dato > valor2))
     {
         bool = 1;
     }
