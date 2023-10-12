@@ -75,10 +75,18 @@ int main()
             bool2 = 1;
         }
     }
+    printf("Datos adicionales \n");
+
+    if((bool1 == 1 && bool2 == 0) || (bool1 == 0 && bool2 == 1)){
+        printf("El seno y coseno tienen tienen valores tanto positivos como negativos \n");
+    }
+    if((bool1 == 1 && bool2 == 1)){
+            printf("El seno y coseno tienen tienen valores positivos \n");
+    }
 
 
     //Dado el enunciado, mostraremos de manera siguiente si uno de los dos es positivo y negativo, o si ambos son positivos
-    printf("Datos adicionales \n");
+    /*
     for (i = 0; i < cant; i++){
         if (((seno[i] > 0) && (coseno[i] < 0)) || ((seno[i] > 0) && (coseno[i] < 0))){
            printf("El numero %f, en su seno y coseno tienen valores diferentes (Uno es positivo y el otro es negativo) \n", numeros[i]);
@@ -87,8 +95,7 @@ int main()
             printf("Tanto el seno como su coseno del numero %f es positivo \n", numeros[i]);
         }
     }
-    //Realizamos esta ultima accion por la vaga redaccion del enunciado. Deja en duda si hay que mostrar todos los procesos a la vez o si hay que hacerlos en partes.
-    //De igual manera, en caso de que hubiese que mostrar todas las comparaciones en un solo recorrido de arreglo, simplificariamos el proceso utilizando un solo for en vez de tres, y usariamos las condidiones de los mismos If para mostrar en pantalla
+    */
     return 0;
 }
 
