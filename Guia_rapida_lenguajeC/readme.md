@@ -438,17 +438,26 @@ Supongamos que tenemos un arreglo de dimension 5 similar a un ejercicio anterior
         }
 
 
-version corta
+Podemos reducir las lineas de codigo utilizando una repeticion for y una variable que vaya tomando los valores desde el 0 hasta el 4 en si ejecucion. La variable i dentro de una repeticion for es capas de asumir estos valores diramte a ejecicion del mismo y es la que utilizaremos de indice para poder rellenar todos los espacios del arreglo
 
         #include <stdio.h>
 
         int main(){
+            int arreglo[5];
+            int i;
             for(i=0; i<5 ; i++){
-                printf("Posicion 4\n");
-                scanf("%d", &arreglo[4]);
+                printf("Posicion %d\n", i);
+                scanf("%d", &arreglo[i]);
                 getchar();
             }
+            printf("A continuacion mostraremos el contenido del arreglo\n");
+            for(i = 0 ; i < 5 ; i++)
+                printf("%d \n", arreglo[i])
             return(0);
         }
+
+A tener en cuenta
+
+- Asi como podemos rellenar el arrelo de 0 a 4, tambien podemos hacerlo en el orden inverso ( de 4 a 0)cambiando los parametros del For. Como asi rellenar el arreglo de uno en uno o de dos en dos, etc
 
 
