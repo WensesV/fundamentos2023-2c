@@ -355,7 +355,6 @@ Sintaxis
 
         int main(){
             int arreglo[5];
-            ...
             arreglo[0] = 1;
             arreglo[1] = 23;
             arreglo[2] = 42;
@@ -364,6 +363,19 @@ Sintaxis
             ...
         return(0);
         }
+
+## Mostrar por pantalla elementos en arreglo con printf()
+
+Del mismo modo que mostrabamos valores en pantalla de los arreglos, utilizaremos el mismo metodo pero con un indice (posicion) del arreglom para mostrar dicho elemento
+
+sintaxis
+
+        printf("El contenido del arreglo es: #formato \n", &nombre_del_arreglo[indice]);
+
+ejemplo (agregar en el ejemplo anterior (asignar arreglo)) "..."
+
+        printf("El arreglo en la posicion 1 tiene el numero: %d \n", arreglo[1]);
+        printf("El arreglo en la posicion 4 tiene el numero: %d \n", arreglo[4]);
 
 ## scanf() y getchar() para arreglos
 
@@ -394,5 +406,49 @@ Ejemplo
         }
 
 
+## ingreso de arreglos con una variable como indice
+
+Supongamos que tenemos un arreglo de dimension 5 similar a un ejercicio anterior, pero queremos hacerlo ingresadno valores por teclado, a continuacion le mostraremos como se haria sin una variable de indice.
+
+
+        #include <stdio.h>
+
+        int main(){
+            int arreglo[5];
+            printf("Posicion 0\n");
+            scanf("%d", &arreglo[0]);
+            getchar();
+
+            printf("Posicion 1\n");
+            scanf("%d", &arreglo[1]);
+            getchar();
+
+            printf("Posicion 2\n");
+            scanf("%d", &arreglo[2]);
+            getchar();
+
+            printf("Posicion 3\n");
+            scanf("%d", &arreglo[3]);
+            getchar();
+
+            printf("Posicion 4\n");
+            scanf("%d", &arreglo[4]);
+            getchar();
+        return(0);
+        }
+
+
+version corta
+
+        #include <stdio.h>
+
+        int main(){
+            for(i=0; i<5 ; i++){
+                printf("Posicion 4\n");
+                scanf("%d", &arreglo[4]);
+                getchar();
+            }
+            return(0);
+        }
 
 
