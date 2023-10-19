@@ -157,13 +157,13 @@ Muestra en pantalla
 
 ## funcion scanf() y getchar() - ingresar datos
 
-- **scanf()**: se utiliza para leer un entero ingresado por el usuario y almacenarlo en la variable
+- **scanf()**: se utiliza para leer un valor ingresado por el usuario con su teclado y almacenarlo el valor en la variable
 - **getchar()**: se utiliza para consumir o generar un salto de línea (o cualquier otro carácter) que queda en el búfer de entrada después de la lectura de scanf. Esto asegura que la entrada esté lista para futuras operaciones de lectura sin problemas.
 
 ### Sintaxis para ingresar datos
 
-    scanf("formato", &variable);
-    getchar(); 
+    scanf("%formato", &variable);
+    getchar();
 
 Ejemplo
 
@@ -244,7 +244,7 @@ se utilizan en estructuras de control condicionales. como if, while, for, entre 
 
 ## Condicional IF/IF-ELSE
 
-Se utilizan para tomar decisiones en un programa. Te permiten ejecutar ciertas partes de código si una condición dada es verdadera (true) y 
+Se utilizan para tomar decisiones en un programa. Te permiten ejecutar ciertas partes de código si una condición dada es verdadera (true) y
 ejecutar otras partes de código si la condición es falsa (false).
 
 ### Sintaxis IF:
@@ -340,7 +340,59 @@ Sintaxis
 Ejemplo
 
         int numeros[5]; // Declaración de un arreglo de enteros con capacidad para 5 elementos
+
  La cantidad de elementos que tiene un arreglo es declarada como la **dimension** del mismo. Para acceder a los elementos de un arreglo debemos utilizar una variable de indice para saber cual de los elementos vamos a ingresar/leer en del arreglo.
 
  A tener en cuenta, supongamos que nosotros declaramos un arreglo de dimension 4. El mismo empieza con el indice desde el 0, y termina en el 3 dandonos asi 4 elementos a guardar. Es decir, que si nosotros queremos guardar informacion para el elemento 1 deberiamos escribir arreglo[0], para el segundo elemento arreglo[1] para el tercero arreglo[2] y para el elemento 4, arreglo[3].
+
+## Asignar un valor a un arreglo
+
+Al igual que al asignar un valor a una variable. Para asignar un valor o elemento a un arreglo en x posicion. Deberemos utilzar un signo "=". Del lado izquierdo deberemos enunciar el arreglo con el indice (posicion) a asignar, y de lado derecho lo que vayamos a asignar al arreglo.
+
+Sintaxis
+
+        #include <stdio.h>
+
+        int main(){
+            int arreglo[5];
+            ...
+            arreglo[0] = 1;
+            arreglo[1] = 23;
+            arreglo[2] = 42;
+            arreglo[3] = 52;
+            arreglo[4] = 758;
+            ...
+        return(0);
+        }
+
+## scanf() y getchar() para arreglos
+
+Utilizaremos un metodo identico al de asignar valores por teclado como haciamos con scanf + getchar y variables, lo unico que debemos tener en cuenta es la posicion (indice) en la que se guarda lo ingresado en el arreglo.
+
+Sintaxis
+
+        tipo nombre_del_arreglo[dimension];
+        scanf("%formato", &nombre_del_arreglo[indice]);
+        getchar();
+
+Ejemplo
+
+        #include <stdio.h>
+
+        int main(){
+            int arreglo[3];
+            printf("Primera posicion\n");
+            scanf("%d", &arreglo[0]);
+            getchar();
+            printf("Segunda posicion\n");
+            scanf("%d", &arreglo[1]);
+            getchar();
+            printf("Tercera posicion\n");
+            scanf("%d", &arreglo[2]);
+            getchar();
+        return(0);
+        }
+
+
+
 
