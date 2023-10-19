@@ -351,6 +351,10 @@ Al igual que al asignar un valor a una variable. Para asignar un valor o element
 
 Sintaxis
 
+        nombre_del_arreglo[indice] = valor_a_asignar;
+
+Ejemplo
+
         #include <stdio.h>
 
         int main(){
@@ -458,6 +462,6 @@ Podemos reducir las lineas de codigo utilizando una repeticion for y una variabl
 
 A tener en cuenta
 
-- Asi como podemos rellenar el arrelo de 0 a 4, tambien podemos hacerlo en el orden inverso ( de 4 a 0)cambiando los parametros del For. Como asi rellenar el arreglo de uno en uno o de dos en dos, etc
+- Asi como podemos rellenar el arrelo de 0 a 4, tambien podemos hacerlo en el orden inverso(de 4 a 0), o rellenar el arreglo de uno en uno o de dos en dos, etc. Cambiando los parametros del For.
 
 
