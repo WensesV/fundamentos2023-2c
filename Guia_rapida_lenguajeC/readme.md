@@ -442,7 +442,7 @@ Supongamos que tenemos un arreglo de dimension 5 similar a un ejercicio anterior
         }
 
 
-Podemos reducir las lineas de codigo utilizando una repeticion for y una variable que vaya tomando los valores desde el 0 hasta el 4 en si ejecucion. La variable i dentro de una repeticion for es capas de asumir estos valores diramte a ejecicion del mismo y es la que utilizaremos de indice para poder rellenar todos los espacios del arreglo
+Podemos reducir las lineas de codigo utilizando una repeticion for y una variable que vaya tomando los valores desde el 0 hasta el 4 en si ejecucion. La variable i dentro de una repeticion for es capas de asumir estos valores durante la ejecicion del mismo y es la que utilizaremos de indice para poder rellenar todos los espacios del arreglo
 
         #include <stdio.h>
 
