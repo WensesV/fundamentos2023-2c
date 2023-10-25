@@ -374,7 +374,7 @@ Del mismo modo que mostrabamos valores en pantalla de los arreglos, utilizaremos
 
 sintaxis
 
-        printf("El contenido del arreglo es: #formato \n", &nombre_del_arreglo[indice]);
+        printf("El contenido del arreglo es: #formato \n", nombre_del_arreglo[indice]);
 
 ejemplo (agregar en el ejemplo anterior (asignar arreglo)) "..."
 
@@ -463,5 +463,7 @@ Podemos reducir las lineas de codigo utilizando una repeticion for y una variabl
 A tener en cuenta
 
 - Asi como podemos rellenar el arrelo de 0 a 4, tambien podemos hacerlo en el orden inverso(de 4 a 0), o rellenar el arreglo de uno en uno o de dos en dos, etc. Cambiando los parametros del For.
+
+
 
 
