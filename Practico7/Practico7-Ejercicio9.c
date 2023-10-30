@@ -48,7 +48,7 @@ int ingreso(int arreglo[], int max) {
     int c, k;
     int m = 1;
     // Ingreso de cantidad
-    printf("Ingrese la cantidad de lavados a ingresar (Maximo %d):\n", max);
+    printf("Ingrese la cantidad de lavados a ingresar en un dia (Maximo %d):\n", max);
     scanf("%d", &c);
     getchar();
     // Control
