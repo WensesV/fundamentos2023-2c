@@ -20,17 +20,17 @@ using namespace std;
 
 vector<int> tubo;
 
-void recarga10() {
+void recarga10(){
     int codUlti = (tubo.empty()) ? 1 : tubo.back() + 1;
 
-    for (int i = 0; i < 10; i++) {
+    for(int i = 0; i < 10; i++){
         tubo.push_back(codUlti++);
     }
-    cout << "Se han recargado 10 balas de pintura en el tubo." << endl;
+    cout << "Recargamos 10 balas" << endl;
 }
 
-void dispara1() {
-    if (!tubo.empty()) {
+void dispara1(){
+    if(!tubo.empty()){
         int bala = tubo.front();
         tubo.erase(tubo.begin());
         cout << "Se disparo " << bala << endl;
@@ -39,21 +39,22 @@ void dispara1() {
     }
 }
 
-bool buscar(int num) {
-    if (!tubo.empty()) {
+bool buscar(int num){
+    if(!tubo.empty()){
         int proxBala = tubo.front();
         if (proxBala == num) {
             cout << "Se encontro la bala, procederemos a dispararla." << endl;
             dispara1();
             return true;
         }
-    } else {
-        cout << "El tubo esta vacio. Debes recargar." << endl;
+    }
+    else{
+        cout << "El tubo esta vacio. Pls recargar." << endl;
     }
     return false;
 }
 
-int main() {
+int main(){
     int codigo;
 
     recarga10();

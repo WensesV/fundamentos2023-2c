@@ -23,8 +23,8 @@ using namespace std;
 
 void cargarAleatoria(int matriz[][4]){
     srand(time(0));
-    for (int fila = 0; fila < 4; fila++) {
-        for (int colum = 0; colum < 4; colum++) {
+    for(int fila = 0; fila < 4; fila++){
+        for(int colum = 0; colum < 4; colum++){
             matriz[fila][colum] = rand() % 10 + 1;
         }
     }
@@ -32,8 +32,8 @@ void cargarAleatoria(int matriz[][4]){
 }
 
 void multiMatrix(int Matriz_A[][4], int Matriz_B[][4], int Matriz_C[][4]){
-    for (int fila = 0; fila < 4; fila++) {
-        for (int colum = 0; colum < 4; colum++) {
+    for(int fila = 0; fila < 4; fila++){
+        for(int colum = 0; colum < 4; colum++){
             Matriz_C[fila][colum] = Matriz_A[fila][colum] * Matriz_B[fila][colum];
         }
     }
@@ -42,7 +42,7 @@ void multiMatrix(int Matriz_A[][4], int Matriz_B[][4], int Matriz_C[][4]){
 
 void imprimirMatrix(int matriz[][4]){
     for (int fila = 0; fila < 4; fila++) {
-        for (int colum = 0; colum < 4; colum++) {
+        for(int colum = 0; colum < 4; colum++){
             cout << matriz[fila][colum] << " ";
         }
         cout << endl;

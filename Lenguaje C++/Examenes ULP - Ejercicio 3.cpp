@@ -14,63 +14,56 @@ c. C) MOSTRAR todas las formis, que no sean de chocolate.
 #include <string>
 using namespace std;
 
-const int tamanio = 3;
+const int tam = 3;
 
-struct formis {
+struct formis{
     string figura;
     string sabor;
 };
 
-void cargarGalletitas(formis galletitas[], int& tope, const formis& galleta) {
-    if (tope < tamanio - 1) {
-        galletitas[++tope] = galleta;
-        cout << "Se cargó exitosamente una galleta Formis en la pila." << endl;
+void cargarGalletitas(formis galletitas[], int& top, const formis& galleta){
+    if(top < tam - 1){
+        galletitas[++top] = galleta;
+        cout << "Se agrego una galletita formis a la fila" << endl;
     } else {
-        cout << "Ups, la pila está llena. No se pueden cargar más galletas." << endl;
+        cout << "Pila llena! No se pueden meter mas galletitas!" << endl;
     }
 }
 
-void buscarFigura(const formis galletitas[], int tope, const string& figuraBuscada) {
+void buscarFigura(const formis galletitas[], int top, const string& figuraBusc){
     bool encontrada = false;
-
-    for (int i = tope; i >= 0; i--) {
-        if (galletitas[i].figura == figuraBuscada) {
-            cout << "Se encontró una galleta con figura de " << figuraBuscada << endl;
+    for(int i = top; i >= 0; i--){
+        if(galletitas[i].figura == figuraBusc){
+            cout << "Se encontró una galleta con figura de " << figuraBusc << endl;
             encontrada = true;
             break;
         }
     }
-
-    if (!encontrada) {
-        cout << "No se encontró una galleta con figura de " << figuraBuscada << endl;
+    if(!encontrada){
+        cout << "No se encontró una galleta con figura de " << figuraBusc << endl;
     }
 }
 
-void mostrarNoChocolate(const formis galletitas[], int tope) {
-    for (int i = tope; i >= 0; i--) {
-        if (galletitas[i].sabor != "chocolate") {
+void mostrarNoChocolate(const formis galletitas[], int top) {
+    for(int i = top; i >= 0; i--){
+        if(galletitas[i].sabor != "chocolate"){
             cout << "Galletita: " << galletitas[i].figura << ", Sabor: " << galletitas[i].sabor << endl;
         }
     }
 }
 
-int main() {
-    formis galletitas[tamanio];
-    int tope = -1;
-
+int main(){
+    formis galletitas[tam];
+    int top = -1;
     formis galletita1 = {"pez", "limon"};
     formis galletita2 = {"gato", "naranja"};
     formis galletita3 = {"perro", "chocolate"};
-
-    cargarGalletitas(galletitas, tope, galletita1);
-    cargarGalletitas(galletitas, tope, galletita2);
-    cargarGalletitas(galletitas, tope, galletita3);
-
+    cargarGalletitas(galletitas, top, galletita1);
+    cargarGalletitas(galletitas, top, galletita2);
+    cargarGalletitas(galletitas, top, galletita3);
     string figuraBuscada = "perro";
-    buscarFigura(galletitas, tope, figuraBuscada);
-
-    cout << "Galletas que no son de chocolate:" << std::endl;
-    mostrarNoChocolate(galletitas, tope);
-
+    buscarFigura(galletitas, top, figuraBuscada);
+    cout << "Galletas que no son de chocolate:" << endl;
+    mostrarNoChocolate(galletitas, top);
     return 0;
 }
