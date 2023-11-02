@@ -30,6 +30,7 @@ Ejercicios resueltos + Guia Lenguaje C
 - Práctico 4 - Completo
 - Práctico 5 - Completo
 - Práctico 6 - Hasta ejercicio 6
+- Práctico 7 - Hasta ejercicio 5 + 9
 - Nuevo: Guías para Lenguaje C 
 - Nuevo: Ejecutables de los ejercicios en carpeta Output
 
