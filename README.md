@@ -33,6 +33,7 @@ Ejercicios resueltos + Guia Lenguaje C
 - Práctico 7 - Hasta ejercicio 5 + 9
 - Nuevo: Guías para Lenguaje C 
 - Nuevo: Ejecutables de los ejercicios en carpeta Output
+- Nuevo: Ejercicios de Examen en ULP (C++)
 
 ------------------------
 
