@@ -1,5 +1,5 @@
 
-# Fundamentos de la Informatica 2023 2C
+# Fundamentos de la Informatica UNSL 2023 2C
 
 Ejercicios resueltos + Guia Lenguaje C
 
