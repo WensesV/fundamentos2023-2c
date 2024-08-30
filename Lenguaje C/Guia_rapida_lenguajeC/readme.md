@@ -5,7 +5,7 @@
 Guia de sintaxis para programar en lenguaje C
 
 ## Librerias
-En lenguaje C, las librerías (también conocidas como bibliotecas) son conjuntos de funciones predefinidas que proporcionan una amplia variedad de capacidades y características para facilitar el desarrollo de programas. Estas librerías están disponibles para los programadores que las utilicen en sus programas C.
+En lenguaje C, las librerías (también conocidas como bibliotecas) son conjuntos de funciones predefinidas que proporcionan una amplia variedad de capacidades y características para facilitar el desarrollo de programas. Estas librerías están disponibles para los programadores las utilicen en sus programas C.
 En este curso utilizamos las librerias **stdio.h** (para la entrada de datos) y **stdlib.h** (proporciona una variedad de funciones y tipos de datos esenciales para la programación). Las mismas deben ser descritas al comienzo del programa
 
 sintaxis
